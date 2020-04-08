@@ -1,0 +1,141 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #6E1FDA, #27006A);
+}
+.main-container {
+    margin: 55px auto;
+    height: 500px;
+    width: 820px;
+    background-color: #170058;
+    border-radius: 12px;
+    box-shadow: 1px -3px 12px 7px #36007E;
+    padding-top: 30px;
+}
+h1 {
+  text-align: center;
+}
+h2{
+  padding-top: 10px;
+  text-align: center;
+  color: #2ADCFF;
+  font-family: lato;
+  font-weight: 900;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.ready {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: lato;
+    font-weight: 900;
+    font-size: 20px;
+}
+.avatar {
+  border-radius: 50% width:100px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 50px);
+}
+
+.done {
+  width: 380px;
+  height: 300px;
+  position: absolute;
+  bottom: 70px;
+  right: 90px;
+}
+
+.rform {
+text-align: center;
+margin: 50px 400px;
+}
+
+.reg {
+  align:center;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  background-color: #170058;
+  border-radius: 12px;
+  box-shadow: 1px -3px 12px 7px #36007E;
+}
+
+.branch {
+  color: white;
+  font-size: 18px;
+  width: 100px;
+}
+
+.button {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#ph {
+  width: 230px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#but {
+  color: white;
+  font-size: 18px;
+}
+
+#submit {
+  width: 150px;
+  padding: 10px;
+  border-radius: 38px;
+  border-style: none;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: lato;
+  outline: none;
+  background-color: #2ADCFF;
+  color: white;
+}
+#submit:hover{
+  background-color: white;
+  color:#2ADCFF;
+}
+.bottom{
+  text-align: center;
+  font-size: 1rem;
+}
+.handles{
+  padding-top:70px;
+  text-align: center;
+  font-size: 1rem;
+}
+#add{
+  width: 550px;
+  padding: 10px;
+  border-radius: 5px;
+}
+a{
+  color:black;
+}
+.fa-linkedin:hover{
+  color: white;
+}
+.fa-github:hover{
+  color: white;
+}
+.fa-youtube:hover{
+  color: white;
+}
+.cp{
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}

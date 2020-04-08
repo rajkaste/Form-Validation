@@ -1,0 +1,84 @@
+body{
+ padding:0;
+ margin:0;
+ background:linear-gradient(to right, #6E1FDA, #27006A);
+}
+
+.main-container {
+    margin: 55px auto;
+    height: 500px;
+    width: 820px;
+    background-color: #170058;
+    border-radius: 12px;
+    box-shadow: 1px -3px 12px 7px #36007E;
+}
+.sub{
+margin:auto;
+padding-top: 30px;
+}
+.wel {
+  margin-top: 100px;
+  text-align: center;
+  color: #2ADCFF;
+  font-family: lato;
+  font-weight: 900;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.ready {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: lato;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.btn {
+    margin-left: 345px;
+    margin-top: 20px;
+    padding: 13px 20px 13px 20px;
+    border-radius: 38px;
+    border-style: none;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: lato;
+    outline: none;
+    background-color: #2ADCFF;
+    color: white;
+}
+
+.btn:hover{
+  background-color: white;
+  color:#2ADCFF;
+}
+
+.bottom{
+  text-align: center;
+  font-size: 1rem;
+}
+
+a{
+  color:black;
+}
+.fa-linkedin:hover{
+  color: white;
+}
+.fa-github:hover{
+  color: white;
+}
+.fa-youtube:hover{
+  color: white;
+}
+.cp{
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
