@@ -71,10 +71,8 @@ function validate() {
     alert("Mobile Number is required!");
     return false;
   }
-  var phnn = /^\d{10}$/;
-  if (phnn.test(phn.value)) {
-    return true;
-  } else {
+ var phnn = /^\d{10}$/;
+  if (!phnn.test(phn.value)) {
     alert("Enter a valid Mobile Number of 10 Digits only!");
     phn.focus();
     return false;
