@@ -63,7 +63,7 @@ function validate() {
     return false;
   }
   var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (reg.test(email.value)) {
+  if (!reg.test(email.value)) {
     alert("You have entered an invalid email address!");
   }
 
