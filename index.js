@@ -10,6 +10,12 @@ function validate() {
   var add = document.getElementById('add');
   var hob = document.getElementById('hob');
   var cb = document.getElementById('cb');
+
+  let countryCode = StudentRegistration.countryCode.selectedIndex;
+  let eng = StudentRegistration.eng.selectedIndex;
+  let flag=false;
+  let str =" ";
+
   if (name.value === '' || name.value == null) {
     alert('First Name is required!');
     return false;
@@ -65,21 +71,31 @@ function validate() {
   var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!reg.test(email.value)) {
     alert("You have entered an invalid email address!");
+    // return false;
   }
 
   if (phn.value === '' || phn.value == null) {
     alert("Mobile Number is required!");
     return false;
   }
- var phnn = /^\d{10}$/;
+  var phnn = /^\d{10}$/;
   if (!phnn.test(phn.value)) {
     alert("Enter a valid Mobile Number of 10 Digits only!");
     phn.focus();
     return false;
   }
+  if(countryCode==0) {
+    flag=true;
+    str +="Select your Country Code!!\n";
+  }
   if (dob.value === '' || dob.value == null) {
     alert('Date of Birth is required!');
     return false;
+  }
+  if (StudentRegistration.gender[0].checked == false && StudentRegistration.gender[1].checked)
+  {
+    flag=true;
+    str +="Select a Gender!!\n";
   }
   if (bg.value === '' || bg.value == null) {
     alert('Blood Group is required!');
@@ -93,5 +109,15 @@ function validate() {
     alert('Hobbies are required!');
     return false;
   }
-
+  if(eng==0) {
+    flag=true;
+    str +="Select your Branch!!";
+  }
+  if(flag){
+         alert("Warning!!\n"+str);
+         return false;
+     }
+     else{
+         return true;
+     }
 }
