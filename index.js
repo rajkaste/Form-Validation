@@ -92,7 +92,7 @@ function validate() {
     alert('Date of Birth is required!');
     return false;
   }
-  if (StudentRegistration.gender[0].checked == false && StudentRegistration.gender[1].checked)
+  if (StudentRegistration.gender[0].checked == false && StudentRegistration.gender[1].checked == false)
   {
     flag=true;
     str +="Select a Gender!!\n";
