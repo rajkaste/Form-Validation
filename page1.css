@@ -5,7 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html{
+  overflow: hidden;
+}
 body {
   height: 100vh;
   background: linear-gradient(to right, #6e1fda, #27006a);
@@ -13,22 +15,22 @@ body {
 }
 
 .main-container {
-  margin: 55px auto;
-  height: 500px;
+  margin: 7.5% auto 3em;
   width: 72.5%;
   background-color: #170058;
   border-radius: 12px;
   box-shadow: 1px -3px 12px 7px #36007e;
 }
 .sub {
-  margin: auto;
-  padding-top: 30px;
+display: flex;
+flex-direction: column;
+justify-content:center ;
+align-items: center;
 }
 .wel {
-  margin-top: 100px;
+  margin-top: 1em;
   text-align: center;
   color: #2adcff;
-  font-family: lato;
   font-weight: 900;
   font-weight: bold;
   font-size: 50px;
@@ -38,26 +40,25 @@ body {
   margin-top: 20px;
   text-align: center;
   color: white;
-  font-family: lato;
   font-weight: 900;
   font-size: 20px;
 }
 
 .btn {
-  margin-left: 345px;
-  margin-top: 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 13px 20px 13px 20px;
   border-radius: 38px;
   border-style: none;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 15px;
-  font-family: lato;
   outline: none;
   background-color: #2adcff;
   color: white;
 }
 
 .btn:hover {
+  cursor: pointer;
   background-color: white;
   color: #2adcff;
 }
