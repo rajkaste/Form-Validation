@@ -1,40 +1,44 @@
-body {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, #6E1FDA, #27006A);
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #6e1fda, #27006a);
+  font-family: "Space Grotesk", sans-serif;
 }
 .main-container {
-    margin: 55px auto;
-    height: 500px;
-    width: 820px;
-    background-color: #170058;
-    border-radius: 12px;
-    box-shadow: 1px -3px 12px 7px #36007E;
-    padding-top: 30px;
+  margin: 55px auto;
+  height: 500px;
+  width: 820px;
+  background-color: #170058;
+  border-radius: 12px;
+  box-shadow: 1px -3px 12px 7px #36007e;
+  padding-top: 30px;
 }
 h1 {
   text-align: center;
 }
-h2{
+h2 {
   padding-top: 10px;
   text-align: center;
-  color: #2ADCFF;
-  font-family: lato;
+  color: #2adcff;
   font-weight: 900;
   font-weight: bold;
   font-size: 50px;
 }
 
 .ready {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-    font-family: lato;
-    font-weight: 900;
-    font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
 }
 .avatar {
-  border-radius: 50% width:100px;
+  border-radius: 50%;
   height: 80px;
   position: absolute;
   top: 10px;
@@ -50,18 +54,18 @@ h2{
 }
 
 .rform {
-text-align: center;
-margin: 50px 400px;
+  text-align: center;
+  margin: 50px 400px;
 }
 
 .reg {
-  align:center;
+  /* align:center; */
   width: 100%;
   padding-top: 12px;
   padding-bottom: 20px;
   background-color: #170058;
   border-radius: 12px;
-  box-shadow: 1px -3px 12px 7px #36007E;
+  box-shadow: 1px -3px 12px 7px #36007e;
 }
 
 .branch {
@@ -92,44 +96,38 @@ margin: 50px 400px;
   padding: 10px;
   border-radius: 38px;
   border-style: none;
+  font-family: inherit;
   font-weight: 900;
   font-size: 15px;
-  font-family: lato;
   outline: none;
-  background-color: #2ADCFF;
+  background-color: #2adcff;
   color: white;
 }
-#submit:hover{
+#submit:hover {
   background-color: white;
-  color:#2ADCFF;
+  color: #2adcff;
 }
-.bottom{
+.bottom {
   text-align: center;
   font-size: 1rem;
 }
-.handles{
-  padding-top:70px;
+.handles {
+  padding-top: 70px;
   text-align: center;
   font-size: 1rem;
 }
-#add{
+#add {
   width: 550px;
   padding: 10px;
   border-radius: 5px;
 }
-a{
-  color:black;
+a {
+  color: black;
 }
-.fa-linkedin:hover{
-  color: white;
-}
-.fa-github:hover{
-  color: white;
-}
-.fa-youtube:hover{
-  color: white;
-}
-.cp{
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-youtube:hover,
+.cp {
   color: white;
 }
 .fa {
@@ -138,4 +136,21 @@ a{
   width: 50px;
   text-align: center;
   text-decoration: none;
+}
+select{
+  margin: 1em auto;
+}
+input {
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+}
+p:not(.cp),
+textarea {
+  margin: 1em auto;
+  text-align: left;
+  width: 60%;
+}
+p {
+  color: white;
 }
