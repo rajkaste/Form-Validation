@@ -5,10 +5,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: linear-gradient(to right, #6e1fda, #27006a);
   font-family: "Space Grotesk", sans-serif;
 }
+
 .main-container {
   margin: 55px auto;
   height: 500px;
@@ -18,9 +20,11 @@ body {
   box-shadow: 1px -3px 12px 7px #36007e;
   padding-top: 30px;
 }
+
 h1 {
   text-align: center;
 }
+
 h2 {
   padding-top: 10px;
   text-align: center;
@@ -37,10 +41,10 @@ h2 {
   font-weight: 900;
   font-size: 20px;
 }
+
 .avatar {
   border-radius: 50%;
   height: 80px;
-  position: absolute;
   top: 10px;
   left: calc(50% - 50px);
 }
@@ -59,8 +63,12 @@ h2 {
 }
 
 .reg {
-  /* align:center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  height: 100%;
   padding-top: 12px;
   padding-bottom: 20px;
   background-color: #170058;
@@ -68,22 +76,18 @@ h2 {
   box-shadow: 1px -3px 12px 7px #36007e;
 }
 
-.branch {
-  color: white;
-  font-size: 18px;
-  width: 100px;
-}
+
 
 .button {
-  width: 250px;
+  width: 100%;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #ph {
-  width: 230px;
+  width: 100%;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #but {
@@ -103,33 +107,40 @@ h2 {
   background-color: #2adcff;
   color: white;
 }
+
 #submit:hover {
   background-color: white;
   color: #2adcff;
 }
+
 .bottom {
   text-align: center;
   font-size: 1rem;
 }
+
 .handles {
   padding-top: 70px;
   text-align: center;
   font-size: 1rem;
 }
+
 #add {
   width: 550px;
   padding: 10px;
   border-radius: 5px;
 }
+
 a {
   color: black;
 }
+
 .fa-linkedin:hover,
 .fa-github:hover,
 .fa-youtube:hover,
 .cp {
   color: white;
 }
+
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -137,20 +148,33 @@ a {
   text-align: center;
   text-decoration: none;
 }
-select{
-  margin: 1em auto;
-}
+
 input {
   border: none;
   box-shadow: none;
   font-family: inherit;
 }
-p:not(.cp),
-textarea {
-  margin: 1em auto;
+
+p:not(.cp) {
+  /* margin: auto; */
   text-align: left;
-  width: 60%;
 }
+
 p {
   color: white;
+  /* display: inline-block; */
+}
+
+.input-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-details div {
+  margin-top: 30px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
 }
