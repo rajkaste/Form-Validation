@@ -59,10 +59,13 @@ h2 {
 
 .rform {
   text-align: center;
-  margin: 50px 400px;
+  margin: auto;
+  width: fit-content;
 }
 
 .reg {
+  margin: 2em 0em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
